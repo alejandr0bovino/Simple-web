@@ -1,0 +1,57 @@
+@import "./utils.css";
+@import "./elements/button.css";
+@import "./elements/slider.css";
+@import "./modules/card.css";
+
+/* Layout
+___________________________________________________________________*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  'Roboto', sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .theme-container {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+
+/* Grid
+___________________________________________________________________*/
+
+.grid-container {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

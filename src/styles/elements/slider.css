@@ -1,0 +1,14 @@
+.slider {
+  display: flex;
+}
+.slider label {
+  margin-right: .5rem;
+}
+
+
+
+@media (min-width: 768px) {
+  .slider input {
+    width: 12rem;
+  }
+}

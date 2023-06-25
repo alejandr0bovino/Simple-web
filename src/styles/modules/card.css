@@ -1,0 +1,71 @@
+.card {
+  padding: 1rem 1rem 2rem;
+  border: 2px solid black;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.card__image {
+  border-radius: .5rem;
+}
+
+.card__title {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+.card__edit {
+  display: flex;
+}
+
+
+  .card__edit .input-1 {
+    width: 100%;    
+    margin-right: .5rem;
+  }
+
+.card__data {
+  display: flex;
+  align-items: center;
+}
+  .card__data__price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  }
+
+  .card__data__amount {
+    padding: 0 0.5rem;
+    height: 2rem;
+    width: 3rem;
+  }
+
+.card__description {
+  font-size: .85em;
+  line-height: 1.25;
+}
+
+.card__action {
+  text-align: center;
+}
+
+
+.card__more {
+  text-align: center;
+}
+  .card__more a {
+    color: inherit;
+    font-size: 1.25rem;
+  }
+
+
+.card--color-2 {
+  background-color: antiquewhite;
+
+}
+
+
+
+.card__swap {
+  text-align: center;
+}
+
