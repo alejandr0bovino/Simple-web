@@ -25,12 +25,7 @@ function App() {
   return (   
     <div className="theme-container">
       <header>
-
-
-        {/* <h3>{count ? `Cart total: $${count}`: ''}</h3> */}
-
         <h3>{count ? `Cart total: $${parseFloat(count).toFixed(2)}`: ''}</h3>
-        
 
         <div className="slider">
           <label htmlFor="text-size">Text size</label>
