@@ -42,7 +42,7 @@ function App() {
 
       <div className="grid-container">
         {data.map((card) => (
-          <Card key={card.id} title={card.title} price={card.price} handleClick={handleClick} /> 
+          <Card key={card.id} title={card.title} image={card.image} price={card.price} handleClick={handleClick} /> 
         ))}
       </div>      
     </div>

@@ -24,7 +24,9 @@ function Card(props) {
 
   return (
     <div className="card">
-      <div className="card__image img-placeholder mb-2"></div>
+      <div className="card__image mb-2">
+        <img src={props.image}/>
+      </div>
 
       <h3 className="card__title mb-1 js-card-title">
         {message ? (

@@ -5,9 +5,14 @@
   overflow: hidden;
 }
 
-.card__image {
-  border-radius: .5rem;
+.card__image {  
 }
+  .card__image img {
+    /* object-fit: cover; */
+    /* background-size: cover; */
+    border-radius: .5rem;
+    width: 100%;
+  }
 
 .card__title {
   margin-top: 0;
