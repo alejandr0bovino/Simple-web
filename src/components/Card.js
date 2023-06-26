@@ -60,7 +60,7 @@ function Card(props) {
       <hr className="mb-2"/>
 
       <div className="card__data mb-1">
-        <span className="card__data__price">${props.price}</span>
+        <span className="card__data__price">${parseFloat(props.price).toFixed(2)}</span>
         <input
           className="card__data__amount"
           type="number" min="1" max="9" step="1" defaultValue="1"

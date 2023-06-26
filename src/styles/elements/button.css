@@ -11,6 +11,7 @@
 .btn-3 {
   padding: .5rem 1rem;
   font-size: .75rem;
+  border-width: 1px;
 }
 
   .btn-3--green {
