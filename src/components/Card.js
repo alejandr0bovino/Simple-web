@@ -28,15 +28,15 @@ function Card(props) {
 
       <h3 className="card__title mb-1 js-card-title">
         {message ? (
-          <div>{message}</div>
+          <span>{message}</span>
         ) : (
-          <div>{props.title}</div>
+          <span>{props.title}</span>
         )}
       </h3>
 
-      <div className="card__edit mb-2">
+      <div className="card__edit__title mb-2">
         {showInput ? (
-          <>
+          <div className="card__edit__title__input">            
             <input
               id="message"
               name="message"
@@ -48,11 +48,12 @@ function Card(props) {
               autoFocus
             />
 
-            <button onClick={saveInput} className="btn-3">Save</button>
-            
-          </>
+            <button onClick={saveInput} className="btn-3 btn-3--green">Save</button>            
+          </div>
         ) : (
-          <button onClick={editInput} className="btn-3">Edit</button>
+          <div className="card__edit__title__action">
+            <button onClick={editInput} className="btn-3">Edit</button>
+          </div>
         )}
       </div>
 

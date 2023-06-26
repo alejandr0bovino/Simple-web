@@ -11,17 +11,25 @@
 
 .card__title {
   margin-top: 0;
-  font-size: 1.25rem;
+  font-size: 1.17rem;
 }
-.card__edit {
+
+.card__edit__title__input {
   display: flex;
 }
 
+.card__edit__title__input input {
+  width: 100%;    
+  margin-right: .5rem;
+}
+.card__edit__title__action {
+  text-align: right;
+}
 
-  .card__edit .input-1 {
-    width: 100%;    
-    margin-right: .5rem;
-  }
+.card__edit__title__action button {
+  width: 4.1rem;
+}
+  
 
 .card__data {
   display: flex;

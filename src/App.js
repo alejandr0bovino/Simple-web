@@ -28,7 +28,7 @@ function App() {
         <h3>{count ? `Cart total: $${count}`: ''}</h3>
 
         <div className="slider">
-          <label htmlFor="text-size">Tamaño de texto</label>
+          <label htmlFor="text-size">Text size</label>
           <input
             type="range" min="1" max="10" value={value} 
             id="text-size"
