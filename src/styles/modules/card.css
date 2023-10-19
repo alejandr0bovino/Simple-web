@@ -13,13 +13,8 @@
 }
 
 .card__image img {
-  /* border-radius: .5rem; */
   width: 100%;
 }
-/* 
-.card__title {
-  font-size: 1.2654rem;
-} */
 
 .card__edit__title__input {
   display: flex;
@@ -30,10 +25,6 @@
   flex: 5
 }
 
-.card__edit__title__input > div > input {
-  /* width: 100%;    
-  margin-right: .5rem; */
-}
 .card__edit__title__action {
   text-align: right;
 }
@@ -54,7 +45,6 @@
 
 .card__data {
   display: flex;
-  /* align-items: center; */
 }
   .card__data__price {
     font-size: 1.25rem;
@@ -65,13 +55,9 @@
   }
 
   .card__data__amount {
-    /* padding: 0 0.5rem; */
-    /* height: 2rem; */
     width: 4rem;
   }
-  /* .card__data__amount:focus-visible {
-    outline: none;
-  } */
+  
   .card__data__amount input {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -79,19 +65,10 @@
 
 
 
-
-
-
-
 .card__description {
   font-size: .85em;
   line-height: 1.25;
 }
-
-/* .card__action {
-  text-align: center;
-} */
-
 
 .card__more {
   text-align: center;
@@ -112,12 +89,4 @@
 .card__swap {
   text-align: center;
 }
-
-
-/* @media (max-width: 767px) {
-  .css-bhp9pd-MuiPaper-root-MuiCard-root {
-    width: 90%;
-  }
-} */
-
 
