@@ -11,12 +11,14 @@ ___________________________________________________________________*/
 }
 
 body {
-  font-family:  'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+  /* background-color: #F3F6F9; */
 }
 
 @media (min-width: 768px) {
   body {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 5rem;
   }
 }
@@ -32,9 +34,36 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 100px;  
+}
+.header__c2 {
+  display: flex;
+  flex: 5;
+  justify-content: end;
+  align-items: center;
+}
+.header__c2 h3 {
+  margin: 0 2rem 0 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
 }
 
+@media (max-width: 767px) {
+  .header__c2 h3 {
+    margin: 0 1rem 0 0;
+  }
+  .header__c2 h3 svg {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__c2 h3 {
+    font-size: 1.25rem;
+  }
+  
+}
 
 /* Grid
 ___________________________________________________________________*/
@@ -46,12 +75,12 @@ ___________________________________________________________________*/
 
 @media (max-width: 767px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -1,9 +1,48 @@
 export const data = [
-  { id: 0, title: "Tourmaline & Eucalyptus Bar Soap", price: 12.25, image: "https://fastly.picsum.photos/id/828/640/640.jpg?hmac=xPmkXewHonX7DTrn13rb-219aTb0-PfbK-VRMT7hgc0" },
-  { id: 1, title: "Tourmaline & Tea Tree Bar Soap", price: 24.50, image: "https://fastly.picsum.photos/id/61/640/640.jpg?hmac=_nacGJ_5VBND3-DwquXLqVE7AwWYphdCR80m10lSsLk"},
-  { id: 2, title: "Tourmaline & Argan Oil Bar Soap", price: 12.50, image: "https://fastly.picsum.photos/id/703/640/640.jpg?hmac=hcHCuUfe410NG99mL6dkmh-aHMH7d_UacDc5tQcHl0A" },
-  { id: 3, title: "Tourmaline & Unscented Bar Soap", price: 24.00, image: "https://fastly.picsum.photos/id/616/640/640.jpg?hmac=_UyeZfCFGiasoQRfcgtLMtFc2DAQclKwKfCp05YuxM4" },
-  { id: 4, title: "Tourmaline & Tea Tree Bar Soap", price: 12.25, image: "https://fastly.picsum.photos/id/1026/640/640.jpg?hmac=hLgukwlHLmG7nOqeY3yMeZtyj_lVPf-hwBmWkG4xrOE"},
-  { id: 5, title: "Tourmaline & Argan Oil Bar Soap", price: 24.00, image: "https://fastly.picsum.photos/id/453/640/640.jpg?hmac=-7x5PO8_xDvwn74SLgMk57w45oj_gc4EDyLKcZiGiUU" },
-  { id: 6, title: "Tourmaline & Unscented Bar Soap", price: 12.00, image: "https://fastly.picsum.photos/id/924/640/640.jpg?hmac=GIWRbc67VED_rq04cKUQ6KWehQbdR7YTf2rTmueOXL0" }
+  {
+    id: 424332,
+    title: "Tourmaline & Eucalyptus Bar",
+    price: 12.25,
+    image: "https://i.imgur.com/5mPmJYO.jpeg",
+  },
+
+  {
+    id: 12343,
+    title: "Tourmaline & Tea Tree Bar Soap",
+    price: 12.25,
+    image: "https://i.imgur.com/DumuKkD.jpeg",
+  },
+  {
+    id: 345456546,
+    title: "Tourmaline & Tea Tree Bar Soap",
+    price: 24.5,
+    image:
+      "https://fastly.picsum.photos/id/61/640/640.jpg?hmac=_nacGJ_5VBND3-DwquXLqVE7AwWYphdCR80m10lSsLk",
+  },
+  {
+    id: 3958309,
+    title: "Tourmaline & Argan Oil Bar Soap",
+    price: 24.0,
+    image: "https://i.imgur.com/nCqOV7L.jpeg",
+  },
+  {
+    id: 4353450,
+    title: "Tourmaline & Argan Oil Bar Soap",
+    price: 12.5,
+    image:
+      "https://fastly.picsum.photos/id/703/640/640.jpg?hmac=hcHCuUfe410NG99mL6dkmh-aHMH7d_UacDc5tQcHl0A",
+  },
+
+  {
+    id: 9809890243,
+    title: "Tourmaline & Unscented Bar",
+    price: 12.0,
+    image: "https://i.imgur.com/rUWNzYa.jpeg",
+  },
+  {
+    id: 9853484,
+    title: "Tourmaline & Unscented Bar",
+    price: 24.0,
+    image: "https://i.imgur.com/O1LUkwy.jpeg",
+  },
 ];

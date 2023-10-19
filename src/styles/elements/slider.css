@@ -1,14 +1,25 @@
-.slider {
-  display: flex;
-}
-.slider label {
-  margin-right: .5rem;
+.css-zayqnb-MuiStack-root {
+  margin-bottom: 0 !important;
+  /* width: 3rem; */
 }
 
 
 
-@media (min-width: 768px) {
-  .slider input {
-    width: 12rem;
+
+@media (max-width: 767px) {
+  .slider {
+    width: 150px;
   }
 }
+@media (min-width: 768px) {
+  .slider {
+    width: 30%;
+  }
+}
+
+.slider > .MuiStack-root {
+  margin-bottom: 0 !important; 
+}
+
+
+

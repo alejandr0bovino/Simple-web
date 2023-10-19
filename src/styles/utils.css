@@ -1,19 +1,27 @@
 .mb-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 .mb-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
+/* .mb-2 {
+  margin-bottom: 20rem;
+} */
+
 
 .mr-1 {
   margin-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 
 /* 
 ___________________________________________________________________*/
 
-
+/* 
 .img-placeholder {
   position: relative;
   width: 100%;
@@ -50,4 +58,4 @@ ___________________________________________________________________*/
   right: 0;
   height: 100%;
   width: 300%;
-}
+} */

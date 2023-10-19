@@ -1,8 +1,26 @@
 import React from "react";
-import { useState } from 'react';
+import { useState } from "react";
 
-function Card(props) {
-  const [message, setMessage] = useState('');
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+
+// import Card from "@mui/material/Card";
+// import CardContent from "@mui/material/CardContent";
+// import CardMedia from "@mui/material/CardMedia";
+// import Typography from "@mui/material/Typography";
+// import { CardActionArea } from "@mui/material";
+
+import Card from "@mui/material/Card";
+// import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+// import Button from '@mui/material/Button';
+import Typography from "@mui/material/Typography";
+
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+
+function Cardiologic(props) {
+  const [message, setMessage] = useState("");
   const [showInput, setShowInput] = useState(false);
   const [amount, setAmount] = useState(1);
 
@@ -11,82 +29,147 @@ function Card(props) {
   };
 
   const handleAmount = (event) => {
-    setAmount(Number(event.target.value))
-  }
+    setAmount(Number(event.target.value));
+  };
 
   const editInput = () => {
-    setShowInput(true)
-  }
+    setShowInput(true);
+  };
 
   const saveInput = () => {
-    setShowInput(false)
-  }
+    setShowInput(false);
+  };
 
   return (
-    <div className="card">
-      <div className="card__image mb-2">
-        <img src={props.image}/>
-      </div>
+    <>
 
-      <h3 className="card__title mb-1 js-card-title">
-        {message ? (
-          <span>{message}</span>
-        ) : (
-          <span>{props.title}</span>
-        )}
-      </h3>
-
-      <div className="card__edit__title mb-2">
-        {showInput ? (
-          <div className="card__edit__title__input">            
-            <input
-              id="message"
-              name="message"
-              type="text"          
-              className="input-1"            
-              placeholder="Edit title"
-              onChange={handleChange}
-              value={message}  
-              autoFocus
-            />
-
-            <button onClick={saveInput} className="btn-3 btn-3--green">Save</button>            
-          </div>
-        ) : (
-          <div className="card__edit__title__action">
-            <button onClick={editInput} className="btn-3">Edit</button>
-          </div>
-        )}
-      </div>
-
-      <hr className="mb-2"/>
-
-      <div className="card__data mb-1">
-        <span className="card__data__price">${parseFloat(props.price).toFixed(2)}</span>
-        <input
-          className="card__data__amount"
-          type="number" min="1" max="9" step="1" defaultValue="1"
-          onChange={handleAmount}
+      {/* <Card sx={{ maxWidth: 345 }}> */}
+      <Card>
+        <CardMedia
+          sx={{ height: 180 }}
+          image={props.image}
+          title="green iguana"
         />
-      </div>
-      
-      <div className="card__description mb-2">
-        <p>
-          Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.
-        </p>
-      </div>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div" className="js-card-title mb-1">
+            {message ? <span>{message}</span> : <span>{props.title}</span>}
+          </Typography>
 
-      <hr className="mb-2"/>
 
-      <div className="card__action mb-1">
-        <button type="button" className="btn-1" onClick={event => props.handleClick(amount, props.price)} >Add to cart</button>
-      </div>      
+          <Typography variant="body2" color="text.secondary" className="mb-2">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
 
-      <div className="card__more">
-        <a href="#">Learn More</a>
-      </div>
-    </div>
+          
+          <div className="mb-2">
+            {showInput ? (
+              <div className="card__edit__title__input">
+                <TextField
+                  name="message"
+                  id="message"
+                  variant="standard"
+                  onChange={handleChange}
+                  value={message}
+                  autoFocus
+                />
+
+                <span>&nbsp;&nbsp;&nbsp;</span>
+
+                <Button variant="contained" disableElevation onClick={saveInput}>
+                  Save
+                </Button>
+              </div>
+            ) : (
+              <div className="card__edit__title__action">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  disableElevation
+                  onClick={editInput}
+                >
+                  Edit
+                </Button>
+              </div>
+            )}
+          </div> 
+
+
+
+          {/* <hr className="mb-2" /> */}
+
+
+
+
+
+          
+
+
+          <hr className="mb-2" />
+
+
+          <div className="card__action">
+            <div className="card__data">
+              <span className="card__data__price">
+                <AttachMoneyIcon/> {parseFloat(props.price).toFixed(2)}
+              </span>
+
+              {/* <input
+                className="card__data__amount"
+                type="number"
+                min="1"
+                max="9"
+                step="1"
+                defaultValue="1"
+                onChange={handleAmount}
+              /> */}
+
+              <TextField
+                className="card__data__amount"
+                min="1"
+                max="9"
+                step="1"
+                defaultValue="1"
+                onChange={handleAmount}
+                id="outlined-number"
+                type="number"
+                variant="outlined"
+              />
+            </div>
+
+            {/* <div>|</div> */}
+
+            <div>
+              <Button
+                variant="outlined"
+                color="primary"
+
+                onClick={(event) => props.handleClick(amount, props.price)}
+              >
+                Add to cart
+              </Button>
+            </div>
+          </div>
+
+
+          {/* <hr className="mb-2"  />
+          
+          <div className="text-center">
+            <Button
+              variant="outlined"
+              color="primary"
+              disableElevation
+              onClick={(event) => props.handleClick(amount, props.price)}
+            >
+              Add to cart
+            </Button>
+          </div> */}
+        </CardContent>
+      </Card>
+
+
+    </>
   );
 }
 
-export default Card;
+export default Cardiologic;
