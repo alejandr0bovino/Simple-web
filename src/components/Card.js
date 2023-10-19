@@ -1,23 +1,13 @@
 import React from "react";
 import { useState } from "react";
-
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-
-// import Card from "@mui/material/Card";
-// import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
-// import Typography from "@mui/material/Typography";
-// import { CardActionArea } from "@mui/material";
-
 import Card from "@mui/material/Card";
-// import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-// import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
-
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 function Cardiologic(props) {
   const [message, setMessage] = useState("");
@@ -42,8 +32,6 @@ function Cardiologic(props) {
 
   return (
     <>
-
-      {/* <Card sx={{ maxWidth: 345 }}> */}
       <Card>
         <CardMedia
           sx={{ height: 180 }}
@@ -94,35 +82,13 @@ function Cardiologic(props) {
             )}
           </div> 
 
-
-
-          {/* <hr className="mb-2" /> */}
-
-
-
-
-
-          
-
-
           <hr className="mb-2" />
-
 
           <div className="card__action">
             <div className="card__data">
               <span className="card__data__price">
                 <AttachMoneyIcon/> {parseFloat(props.price).toFixed(2)}
               </span>
-
-              {/* <input
-                className="card__data__amount"
-                type="number"
-                min="1"
-                max="9"
-                step="1"
-                defaultValue="1"
-                onChange={handleAmount}
-              /> */}
 
               <TextField
                 className="card__data__amount"
@@ -137,8 +103,6 @@ function Cardiologic(props) {
               />
             </div>
 
-            {/* <div>|</div> */}
-
             <div>
               <Button
                 variant="outlined"
@@ -146,24 +110,10 @@ function Cardiologic(props) {
 
                 onClick={(event) => props.handleClick(amount, props.price)}
               >
-                Add to cart
+                <AddShoppingCartIcon />
               </Button>
             </div>
           </div>
-
-
-          {/* <hr className="mb-2"  />
-          
-          <div className="text-center">
-            <Button
-              variant="outlined"
-              color="primary"
-              disableElevation
-              onClick={(event) => props.handleClick(amount, props.price)}
-            >
-              Add to cart
-            </Button>
-          </div> */}
         </CardContent>
       </Card>
 

@@ -1,6 +1,6 @@
-# Test - Option B
+  # Simple web
 
-[test-option-b.netlify.app](https://test-option-b.netlify.app/).
+[simple-react-web-app.netlify.app](https://simple-react-web-app.netlify.app/ ).
 
 # Getting Started with Create React App
 

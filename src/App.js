@@ -1,24 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { data } from "./data";
 import Cardiologic from "./components/Card";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { grey, blueGrey } from '@mui/material/colors';
-
-// import Button from '@mui/material/Button';
 
 import Slider from "@mui/material/Slider";
 import Stack from "@mui/material/Stack";
 
-// import VolumeDownIcon from '@mui/icons-material/VolumeDown';
-// import VolumeupIcon from '@mui/icons-material/VolumeUp';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import TextIncreaseIcon from "@mui/icons-material/TextIncrease";
 import TextDecreaseIcon from "@mui/icons-material/TextDecrease";
-
-// import CartIcon from   '@mui/icons-material/';
-
-// import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
+import AbcOutlinedIcon from '@mui/icons-material/AbcOutlined';
 
 import "./styles/style.css";
 
@@ -30,7 +21,6 @@ function App() {
     const elements = document.querySelectorAll(".js-card-title");
     if (elements) {
       elements.forEach((e) => {
-        // e.style.fontSize = `${Number(value) / 49.5 + 1.225}rem`;
         e.style.fontSize = `${Number(value) / 149.5 + 1.21}rem`;
       });
     }
@@ -43,10 +33,6 @@ function App() {
   };
 
   const theme = createTheme({
-    // palette: {
-    //   primary: grey,
-    //   secondary: blueGrey,
-    // },
     palette: {
       primary: {
         light: "#757ce8",
@@ -63,7 +49,6 @@ function App() {
     },
   });
 
-  // const nnnnnnnn = <ShoppingBasketOutlinedIcon/>;
 
   return (
     <ThemeProvider theme={theme}>
@@ -71,16 +56,15 @@ function App() {
         <header>
 
           <div className="header__c1">
-            XXXXXXX
+            <AbcOutlinedIcon />
           </div>
           <div className="header__c2">
-            {/* <h3>{count ? ` total: $${parsseFloat(count).toFixed(2)}` : ""}</h3> */}
             <h3>
               {
                 count
                 ? 
                 <>
-                  Total: <AttachMoneyIcon fontSize="large"/> {parseFloat(count).toFixed(2)}
+                  Total: <AttachMoneyIcon /> {parseFloat(count).toFixed(2)}
                 </>
                 : ""
               }
@@ -109,31 +93,6 @@ function App() {
                 <TextIncreaseIcon />
               </Stack>
             </div>
-
-            {/* <div> */}
-            {/* <Button variant="contained">Hello World</Button> */}
-
-            {/* <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-                <VolumeDownIcon />
-                <Slider aria-label="Volume" value={value} onChange={handleChange} />
-                <VolumeUp />
-              </Stack> */}
-
-            {/* <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-                <VolumeDownIcon />
-                <Slider aria-label="Volume" value={value} 
-                
-                onChange={
-                  ({ target: { value: radius } }) => {
-                    onChange(radius);
-                }}
-                
-                />
-                <VolumeupIcon />
-              </Stack> */}
-
-            {/* </div> */}
-
           </div>
         </header>
 
